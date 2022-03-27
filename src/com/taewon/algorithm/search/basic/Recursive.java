@@ -1,7 +1,8 @@
-package com.taewon.algorithm.search;
+package com.taewon.algorithm.search.basic;
 
 /*
 * DFS, BFS 기초 - 재귀함수(스택프레임)
+* 1부터 입력받은 수까지 출력
 * */
 public class Recursive {
 

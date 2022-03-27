@@ -1,4 +1,4 @@
-package com.taewon.algorithm.search;
+package com.taewon.algorithm.search.basic;
 
 public class DepthFirstSearch {
 

@@ -1,5 +1,8 @@
-package com.taewon.algorithm.search;
+package com.taewon.algorithm.search.basic;
 
+/*
+* DFS, BFS 기초 - 피보나치 수열
+* */
 public class Fibonacci {
 
     public static void main(String[] args) {

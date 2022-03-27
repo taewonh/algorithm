@@ -1,5 +1,8 @@
-package com.taewon.algorithm.search;
+package com.taewon.algorithm.search.basic;
 
+/*
+* DFS, BFS 기초 - 팩토리얼
+* */
 public class Factorial {
 
     public static void main(String[] args) {

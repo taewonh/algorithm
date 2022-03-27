@@ -1,4 +1,4 @@
-package com.taewon.algorithm.search;
+package com.taewon.algorithm.search.basic;
 
 /*
 * DFS, BFS 기초 - 이진수 출력(재귀함수)
