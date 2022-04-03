@@ -1,7 +1,7 @@
-package com.taewon.algorithm.search.basic;
+package com.taewon.algorithm.search.basic2.dfs;
 
 /*
-* DFS, BFS 기초 - 팩토리얼
+* DFS 기초 - 팩토리얼(재귀함수)
 * */
 public class Factorial {
 

@@ -1,7 +1,7 @@
-package com.taewon.algorithm.search.basic;
+package com.taewon.algorithm.search.basic2.dfs;
 
 /*
-* DFS, BFS 기초 - 피보나치 수열
+* DFS 기초 - 피보나치 수열(재귀함수)
 * */
 public class Fibonacci {
 

@@ -1,7 +1,7 @@
-package com.taewon.algorithm.search.basic;
+package com.taewon.algorithm.search.basic2.dfs;
 
 /*
-* DFS, BFS 기초 - 이진수 출력(재귀함수)
+* DFS 기초 - 이진수 출력(재귀함수)
 * */
 public class BinaryRecursive {
 
