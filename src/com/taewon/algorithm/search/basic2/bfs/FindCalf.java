@@ -31,7 +31,8 @@ public class FindCalf {
         Scanner scanner = new Scanner(System.in);
         int start = scanner.nextInt();
         end = scanner.nextInt();
-        findCalf(start);
+//        findCalf(start);
+        improveFindCalf(start);
         System.out.println(map.get(end) - 1);
     }
 
@@ -53,6 +54,36 @@ public class FindCalf {
                     queue.add(node + 5);
                 } else if (node > end) {
                     queue.add(node - 1);
+                }
+            }
+        }
+    }
+
+    /*
+    * 개선버전 : 어차피 map의 containsKey로 체크하고 있기 때문에
+    * 아래에서 굳이 조건에 맞춰 -1, +1, +5를 해주는 것이 아닌
+    * 전체를 map에 input하고 일치하는 경우에만 반복을 중단시켜주는 것이 코드가 효율적.
+    * 두 메서드 모두 복잡도는 동일하긴 함.
+    * */
+    public static void improveFindCalf(int start) {
+        queue.add(start);
+        while(!queue.isEmpty()) {
+            int size = queue.size();
+            level++;
+            for (int count = 0; count < size; count++) {
+                int node = queue.poll();
+                if (node < 0 || node > 10000) { continue; }
+
+                if (map.containsKey(node)) { continue; }
+                else { map.put(node, level); }
+
+                if (node == end) {
+                    queue.clear();
+                    break;
+                } else {
+                    queue.add(node - 1);
+                    queue.add(node + 1);
+                    queue.add(node + 5);
                 }
             }
         }
